@@ -32,11 +32,11 @@ export default function Features() {
 
           {/* Contenido de texto a la derecha */}
           <div className="space-y-6">
-            <h2 className="font-semibold text-gray-900 leading-tight whitespace-nowrap" style={{ fontSize: '40px' }}>
+            <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-gray-900 leading-tight" style={{ fontWeight: 600 }}>
               Featured AWS Usergroup
             </h2>
             
-            <h3 className="font-semibold text-gray-800" style={{ fontSize: '30px' }}>
+            <h3 className="text-xl sm:text-2xl lg:text-[30px] font-semibold text-gray-800" style={{ fontWeight: 600 }}>
               AWS UG Vancouver
             </h3>
             
