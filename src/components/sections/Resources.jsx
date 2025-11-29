@@ -1,6 +1,8 @@
-﻿import React from "react";
+﻿import React, { useState } from "react";
 
 export default function Resources() {
+  const [activeCard, setActiveCard] = useState(null);
+
   const resources = [
     {
       title: "AWS Community Day",
@@ -44,8 +46,9 @@ export default function Resources() {
           {resources.map((resource, index) => (
             <div
               key={index}
+              onClick={() => setActiveCard(activeCard === index ? null : index)}
               className={`rounded-2xl p-8 transition-all duration-300 group cursor-pointer flex flex-col justify-between min-h-[320px] ${
-                resource.highlighted 
+                resource.highlighted || activeCard === index
                   ? 'bg-[#ff9900]' 
                   : 'bg-white hover:bg-[#ff9900]'
               }`}
@@ -59,7 +62,7 @@ export default function Resources() {
                 </p>
               </div>
               <button className={`w-full px-6 py-2.5 text-black text-sm font-medium rounded-full border-2 transition-all duration-300 mt-6 ${
-                resource.highlighted
+                resource.highlighted || activeCard === index
                   ? 'bg-transparent border-black'
                   : 'bg-[#ff9900] border-transparent group-hover:border-black'
               }`} style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
