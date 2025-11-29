@@ -1,0 +1,10 @@
+﻿@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Estilos mínimos */
+html, body, #root { 
+  height: 100%; 
+  font-family: 'Inter', sans-serif;
+}
+.container { max-width: 1100px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
