@@ -154,8 +154,8 @@ export default function Hero() {
         <div className="container max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Contenido de texto a la izquierda */}
-            <div className="space-y-6 w-fit">
-              <h2 className="font-semibold text-gray-900 leading-tight whitespace-nowrap" style={{ fontSize: '35px', fontFamily: 'Source Sans Pro, sans-serif' }}>
+            <div className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-[35px] font-semibold text-gray-900 leading-tight" style={{ fontWeight: 600, fontFamily: 'Source Sans Pro, sans-serif' }}>
                 Discover AWS User Groups<br />
                 Around the World
               </h2>
