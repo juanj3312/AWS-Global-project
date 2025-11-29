@@ -29,10 +29,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch justify-stretch">
-            <button className="px-6 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-black font-normal rounded-full transition-all duration-200 text-[18px]">
+            <button className="px-6 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-black rounded-full transition-all duration-200 text-[18px]" style={{ fontWeight: 400 }}>
               Discover AWS User Groups →
             </button>
-            <button className="px-6 py-3 bg-transparent hover:bg-white/10 text-white font-normal rounded-full transition-all duration-200 text-[18px]">
+            <button className="px-6 py-3 bg-transparent hover:bg-white/10 text-white rounded-full transition-all duration-200 text-[18px]" style={{ fontWeight: 400 }}>
               Access Leader Resources
             </button>
           </div>

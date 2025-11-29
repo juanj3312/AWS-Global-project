@@ -33,6 +33,12 @@ export default function Resources() {
   return (
     <section id="resources" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 md:mb-16">
+          <button className="inline-block px-6 py-3 text-gray-900 font-semibold border-b-2 border-gray-900 mb-12" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
+            Submit Your Tips and Tricks →
+          </button>
+        </div>
+
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3" style={{ fontWeight: 600 }}>
             Resources for Leaders

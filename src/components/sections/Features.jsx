@@ -48,7 +48,8 @@ export default function Features() {
               href="https://awsusergroups.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block px-8 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-black font-semibold rounded-full transition-all duration-200 text-sm"
+              className="inline-block px-8 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-black rounded-full transition-all duration-200 text-sm"
+              style={{ fontWeight: 400 }}
             >
               Explore Community
             </a>
