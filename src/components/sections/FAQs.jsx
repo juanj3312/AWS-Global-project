@@ -80,13 +80,13 @@ export default function FAQs() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-colors ${
-                openIndex === index ? 'bg-[#ff9900]' : 'bg-white'
+              className={`rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-all duration-700 ease-out ${
+                openIndex === index ? 'bg-[#ff9900] shadow-lg scale-[1.02]' : 'bg-white'
               }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full flex items-center justify-between p-4 md:p-5 text-left transition-colors ${
+                className={`w-full flex items-center justify-between p-4 md:p-5 text-left transition-all duration-700 ease-out ${
                   openIndex === index ? 'bg-[#ff9900]' : 'hover:bg-gray-50'
                 }`}
               >
@@ -139,7 +139,7 @@ export default function FAQs() {
           ))}
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-20">
           <a 
             href="https://tally.so/r/pbee4b"
             target="_blank"
