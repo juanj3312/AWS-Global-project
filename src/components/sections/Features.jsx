@@ -65,7 +65,7 @@ export default function Features() {
         {/* Nueva sección Build Genie Cloud Solution */}
         <div id="build" className="bg-[#F5F5F5] w-full py-20 sm:py-28 md:py-32 mx-0">
           <div className="w-full flex justify-center items-center">
-            <div className="w-full max-w-[1100px] p-6 sm:p-10 md:p-14 lg:p-16 my-12 sm:my-16 md:my-20 lg:my-24">
+            <div className="w-full max-w-[1100px] p-6 sm:p-10 md:p-14 lg:p-16 my-9 sm:my-12 md:my-15 lg:my-18">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Contenido de texto a la izquierda */}
                 <div className="space-y-6">
