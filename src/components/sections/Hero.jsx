@@ -6,7 +6,7 @@ export default function Hero() {
   const [hoveredButton3, setHoveredButton3] = useState(false);
 
   return (
-    <section id="hero" className="relative flex flex-col cursor-pointer">
+    <section id="hero" className="relative flex flex-col cursor-pointer bg-white">
       {/* Contenido principal con fondo de imagen */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center py-20 sm:py-32 md:py-40 lg:py-56 min-h-[500px]">
         {/* Fondo con imagen solo en esta sección */}
