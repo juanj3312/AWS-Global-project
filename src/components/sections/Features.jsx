@@ -64,9 +64,9 @@ export default function Features() {
 
         {/* Nueva sección Build Genie Cloud Solution */}
         <div id="build" className="bg-[#F5F5F5] w-full py-20 sm:py-28 md:py-32 mx-0">
-          <div className="w-full flex justify-center items-center">
-            <div className="w-full max-w-[1100px] p-6 sm:p-10 md:p-14 lg:p-16 my-9 sm:my-12 md:my-15 lg:my-18">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="w-full">
+            <div className="w-full p-6 sm:p-10 md:p-14 lg:p-16 my-9 sm:my-12 md:my-15 lg:my-18">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
                 {/* Contenido de texto a la izquierda */}
                 <div className="space-y-6">
                   <h2 className="leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C', fontSize: '35px' }}>
@@ -91,12 +91,12 @@ export default function Features() {
                   </a>
                 </div>
                 {/* Logo a la derecha */}
-                <div className="flex justify-center lg:justify-end">
-                  <div className="relative w-full max-w-[220px]">
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-[180px] md:max-w-[200px] lg:max-w-[220px] ml-0 lg:ml-4">
                     <img 
                       src="/build-genie-logo.png" 
                       alt="Build Genie Cloud Solution" 
-                      className="w-full h-auto mx-auto lg:mx-0 lg:ml-auto"
+                      className="w-full h-auto mx-auto lg:mx-0"
                     />
                   </div>
                 </div>
