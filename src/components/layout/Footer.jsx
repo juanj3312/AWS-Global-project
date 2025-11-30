@@ -51,7 +51,10 @@ export default function Footer() {
             <p className="text-gray-300 text-[17px] mb-4 max-w-sm mx-auto md:mx-0">
               Submit your insights through the form below and help us keep the resource library growing and up-to-date.
             </p>
-            <button 
+            <a 
+              href="https://tally.so/r/pbee4b"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[17px]" 
               style={{ fontWeight: 400, color: '#000000E5' }}
               onMouseEnter={() => setHoveredButton(true)}
@@ -61,7 +64,7 @@ export default function Footer() {
               <span className={`transition-all duration-300 ${hoveredButton ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
                 →
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

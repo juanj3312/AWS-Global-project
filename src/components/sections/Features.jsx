@@ -81,7 +81,10 @@ export default function Features() {
                   Meet your new cloud sidekick — the Build Genie, built by the Vancouver AWS community. Describe what you want to build in the cloud, and it instantly explains the architecture, the reasoning behind it, and generates Terraform code ready to deploy.
                 </p>
 
-                <button 
+                <a 
+                  href="https://partyrock.aws/u/Cloudaws/mt8_7y8ZO/Cloud-Solution-Build-Genie"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[17px]" 
                   style={{ fontWeight: 400, color: '#000000E5' }}
                   onMouseEnter={() => setHoveredButton2(true)}
@@ -91,7 +94,7 @@ export default function Features() {
                   <span className={`transition-all duration-300 ${hoveredButton2 ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
                     →
                   </span>
-                </button>
+                </a>
               </div>
 
               {/* Logo a la derecha */}

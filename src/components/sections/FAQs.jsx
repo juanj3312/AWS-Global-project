@@ -140,7 +140,10 @@ export default function FAQs() {
         </div>
 
         <div className="text-center mt-8">
-          <button 
+          <a 
+            href="https://tally.so/r/pbee4b"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-900 pb-1 text-[17px] relative group transition-all duration-300"
             style={{ fontFamily: 'Source Sans Pro, sans-serif', fontWeight: 400 }}
             onMouseEnter={() => setHoveredButton(true)}
@@ -154,7 +157,7 @@ export default function FAQs() {
               className="absolute bottom-0 left-0 h-[2px] bg-gray-900 transition-all duration-300"
               style={{ width: hoveredButton ? 'calc(100%)' : 'calc(100% - 28px)' }}
             />
-          </button>
+          </a>
         </div>
       </div>
     </section>
