@@ -37,7 +37,7 @@ export default function Features() {
 
             {/* Contenido de texto a la derecha */}
             <div className="space-y-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-[40px] leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
+              <h2 className="text-2xl sm:text-3xl lg:text-[35px] leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
                 Featured AWS Usergroup
               </h2>
               
@@ -73,7 +73,7 @@ export default function Features() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
               {/* Contenido de texto a la izquierda */}
               <div className="space-y-6">
-                <h2 className="leading-tight whitespace-nowrap" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C', fontSize: '40px' }}>
+                <h2 className="leading-tight whitespace-nowrap" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C', fontSize: '35px' }}>
                   Build Genie Cloud Solution
                 </h2>
                 

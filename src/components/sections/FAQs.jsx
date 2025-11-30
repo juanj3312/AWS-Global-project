@@ -68,7 +68,7 @@ export default function FAQs() {
     <section id="faqs" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
+          <h2 className="text-3xl md:text-[35px] mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
             AWS User Group Leaders - Tips & Tricks
           </h2>
           <p className="text-[17px]" style={{ color: '#000000E5' }}>
