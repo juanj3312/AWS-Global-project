@@ -90,7 +90,7 @@ export default function FAQs() {
                   openIndex === index ? 'bg-[#ff9900]' : 'hover:bg-gray-50'
                 }`}
               >
-                <span className="text-[17px] pr-4" style={{ color: '#000000E5' }}>
+                <span className="text-[17px] pr-4" style={{ color: '#000000E5', fontFamily: 'Source Sans Pro, sans-serif', fontWeight: 500 }}>
                   {faq.question}
                 </span>
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-[#ff9900] text-black rounded">
