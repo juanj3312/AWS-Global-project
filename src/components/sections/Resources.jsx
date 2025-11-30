@@ -39,7 +39,7 @@ export default function Resources() {
           <h2 className="text-3xl md:text-[35px] mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
             Resources for Leaders
           </h2>
-          <p className="text-[17px]" style={{ color: '#000000E5' }}>
+          <p className="text-[17px] mt-12" style={{ color: '#000000E5' }}>
             These resources are here to help community leaders plan and run successful events
           </p>
         </div>
