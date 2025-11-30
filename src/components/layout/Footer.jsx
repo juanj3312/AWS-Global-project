@@ -4,7 +4,7 @@ export default function Footer() {
   const [hoveredButton, setHoveredButton] = useState(false);
 
   return (
-    <footer className="bg-[#1a1a1a] text-white pt-[250px] pb-[250px]">
+    <footer className="bg-[#1a1a1a] text-white pt-[250px]" style={{ paddingBottom: '100px' }}>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Logo Section */}
@@ -69,13 +69,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="mt-12 pt-6 border-t border-gray-700 text-center">
-          <div className="mb-2 mt-6">
-            <span style={{ color: '#000000E5', fontWeight: 500, fontSize: 16 }}>
-              AWS Global Community
-            </span>
-          </div>
-          <p className="text-gray-400 text-xs md:text-sm">
+        <div className="mt-12 pt-6 border-t text-center" style={{ borderTop: '1px solid #000000E5' }}>
+          {/* Línea superior eliminada, solo queda el copyright */}
+          <p className="text-gray-400 text-xs md:text-sm mt-6 mb-0" style={{ color: '#000000E5' }}>
             © {new Date().getFullYear()} AWS Global. All rights reserved.
           </p>
         </div>

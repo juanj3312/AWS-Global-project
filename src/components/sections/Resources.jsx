@@ -33,10 +33,46 @@ export default function Resources() {
   ];
 
   return (
-    <section id="resources" className="py-12 sm:py-16 md:py-20 bg-gray-50">
+    <section id="resources" className="py-12 sm:py-16 md:py-20 bg-gray-50 cursor-pointer">
+      {/* Slider animado naranja arriba del título */}
+      <div className="relative bg-[#ff9900] py-4 md:py-5 overflow-hidden mb-[25px]">
+        <style>{`
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll { animation: scroll 30s linear infinite; }
+        `}</style>
+        <div className="flex animate-scroll">
+          <div className="flex items-center px-4 whitespace-nowrap">
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
+          </div>
+          <div className="flex items-center px-4 whitespace-nowrap">
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
+            <span className="text-2xl text-black mx-6">✱</span>
+            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
+          </div>
+        </div>
+      </div>
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-[35px] mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
+          <h2 className="text-3xl md:text-[35px] mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C', marginTop: '100px' }}>
             Resources for Leaders
           </h2>
           <p className="text-[17px] mt-12" style={{ color: '#000000E5' }}>

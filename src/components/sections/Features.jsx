@@ -5,7 +5,7 @@ export default function Features() {
   const [hoveredButton2, setHoveredButton2] = useState(false);
 
   return (
-    <section id="features" className="py-16 sm:py-24 md:py-32 bg-white">
+    <section id="features" className="py-16 sm:py-24 md:py-32 bg-white cursor-pointer">
       <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
         {/* Sección con fondo blanco, solo el texto en cuadro gris */}
         <div id="featured" className="rounded-3xl p-0">
