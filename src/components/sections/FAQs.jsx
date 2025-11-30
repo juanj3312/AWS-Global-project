@@ -80,13 +80,13 @@ export default function FAQs() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-all duration-[2500ms] ease-in-out ${
+              className={`rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-all duration-500 ease-in-out ${
                 openIndex === index ? 'bg-[#ff9900] shadow-lg scale-[1.02] backdrop-blur-sm' : 'bg-white'
               }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full flex items-center justify-between p-4 md:p-5 text-left transition-all duration-[2500ms] ease-in-out ${
+                className={`w-full flex items-center justify-between p-4 md:p-5 text-left transition-all duration-500 ease-in-out ${
                   openIndex === index ? 'bg-[#ff9900] backdrop-blur-sm' : 'hover:bg-gray-50'
                 }`}
               >
@@ -111,7 +111,7 @@ export default function FAQs() {
                   </svg>
                 </span>
               </button>
-              <div className={`px-4 md:px-5 pb-4 md:pb-5 pt-2 rounded-b-lg transition-all duration-[2500ms] ease-in-out backdrop-blur-sm ${openIndex === index ? 'bg-[#ff9900]' : 'bg-white pointer-events-none h-0 p-0 overflow-hidden'}`}>
+              <div className={`px-4 md:px-5 pb-4 md:pb-5 pt-2 rounded-b-lg transition-all duration-500 ease-in-out backdrop-blur-sm ${openIndex === index ? 'bg-[#ff9900]' : 'bg-white pointer-events-none h-0 p-0 overflow-hidden'}`}>
                 {openIndex === index && (
                   index === 11 ? (
                     <div className="text-[17px] leading-relaxed" style={{ color: '#000000E5' }}>

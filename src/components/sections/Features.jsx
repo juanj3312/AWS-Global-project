@@ -7,8 +7,8 @@ export default function Features() {
   return (
     <section id="features" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
-        {/* Fondo gris para la primera sección */}
-        <div id="featured" className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
+        {/* Sección con fondo blanco, solo el texto en cuadro gris */}
+        <div id="featured" className="rounded-3xl p-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Imágenes a la izquierda */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
@@ -22,7 +22,6 @@ export default function Features() {
                   />
                 </div>
               </div>
-              
               {/* Segunda imagen - personas en networking */}
               <div className="flex-1">
                 <div className="bg-gray-300 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl h-[300px] sm:h-[400px] md:h-[500px] relative">
@@ -34,21 +33,17 @@ export default function Features() {
                 </div>
               </div>
             </div>
-
-            {/* Contenido de texto a la derecha */}
-            <div className="space-y-6">
+            {/* Contenido de texto a la derecha en cuadro gris */}
+            <div className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
               <h2 className="text-2xl sm:text-3xl lg:text-[35px] leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
                 Featured AWS Usergroup
               </h2>
-              
               <h3 className="text-xl sm:text-2xl lg:text-[30px]" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
                 AWS UG Vancouver
               </h3>
-              
               <p className="text-[17px] leading-relaxed" style={{ color: '#000000E5' }}>
                 AWS User Group Vancouver brings together cloud enthusiasts, developers, and tech professionals in the Vancouver area to learn, share, and collaborate on all things AWS. With monthly meetups, workshops, and networking events, the community provides a space for members of all skill levels to explore AWS services, exchange ideas, and grow their cloud expertise.
               </p>
-
               <a 
                 href="https://awsusergroups.com" 
                 target="_blank" 
