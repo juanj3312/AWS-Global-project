@@ -48,8 +48,16 @@ export default function Hero() {
                 →
               </span>
             </a>
-            <button className="px-6 py-3 bg-transparent text-white rounded-full transition-all duration-200 text-[17px] hover:underline hover:underline-offset-4" style={{ fontWeight: 400 }}>
-              Access Leader Resources
+            <button 
+              className="px-6 py-3 bg-transparent text-white rounded-full transition-all duration-200 text-[17px] inline-flex items-center justify-center gap-2" 
+              style={{ fontWeight: 400 }}
+              onMouseEnter={() => setHoveredButton3(true)}
+              onMouseLeave={() => setHoveredButton3(false)}
+            >
+              <span>Access Leader Resources</span>
+              <span className={`transition-all duration-300 ${hoveredButton3 ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+                →
+              </span>
             </button>
           </div>
         </div>
