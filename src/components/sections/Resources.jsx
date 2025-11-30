@@ -2,30 +2,32 @@
 
 export default function Resources() {
   const [activeCard, setActiveCard] = useState(null);
+  const [hoveredButton, setHoveredButton] = useState(false);
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   const resources = [
     {
-      title: "AWS Community Day",
+      title: ["AWS Community", "Day"],
       description: "A complete guide to organizing and hosting an AWS Community Day event."
     },
     {
-      title: "Sponsor Outreach Email Template",
+      title: ["Sponsor Outreach", "Email Template"],
       description: "A professional email template for reaching out to potential event sponsors."
     },
     {
-      title: "Sponsorship Deck Outline",
+      title: ["Sponsorship Deck", "Outline"],
       description: "An outline to help you create a compelling sponsorship proposal."
     },
     {
-      title: "Code of Conduct Template",
+      title: ["Code of Conduct", "Template"],
       description: "Set clear behavior expectations with this code of conduct template."
     },
     {
-      title: "Volunteer Onboarding Form",
+      title: ["Volunteer Onboarding", "Form"],
       description: "A simple form to onboard and prepare your event volunteers."
     },
     {
-      title: "Submit Your Resources",
+      title: ["Submit Your", "Resources"],
       description: "Share your event resources and photos with the community (remember to watermark)."
     }
   ];
@@ -33,17 +35,11 @@ export default function Resources() {
   return (
     <section id="resources" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12 md:mb-16">
-          <button className="inline-block px-6 py-3 text-gray-900 font-semibold border-b-2 border-gray-900 mb-12" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-            Submit Your Tips and Tricks →
-          </button>
-        </div>
-
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3" style={{ fontWeight: 600 }}>
+          <h2 className="text-3xl md:text-4xl mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
             Resources for Leaders
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
+          <p className="text-[17px]" style={{ color: '#000000E5' }}>
             These resources are here to help community leaders plan and run successful events
           </p>
         </div>
@@ -52,35 +48,47 @@ export default function Resources() {
           {resources.map((resource, index) => (
             <div
               key={index}
-              onClick={() => setActiveCard(activeCard === index ? null : index)}
-              className={`rounded-2xl p-8 transition-all duration-300 group cursor-pointer flex flex-col justify-between min-h-[320px] ${
-                resource.highlighted || activeCard === index
-                  ? 'bg-[#ff9900]' 
-                  : 'bg-white hover:bg-[#ff9900]'
-              }`}
+              className="rounded-2xl p-8 transition-all duration-300 bg-white flex flex-col justify-between"
+              style={{ width: '323px', height: '388px' }}
             >
               <div>
-                <h3 className="text-[18px] font-semibold mb-3 text-black pt-[200px]" style={{ fontWeight: 600 }}>
-                  {resource.title}
+                <h3 className="text-[18px] mb-3 pt-[100px]" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#000000E5' }}>
+                  {resource.title[0]}<br />{resource.title[1]}
                 </h3>
-                <p className="text-[14px] text-black leading-relaxed">
+                <p className="text-[17px] leading-relaxed" style={{ color: '#000000E5' }}>
                   {resource.description}
                 </p>
               </div>
-              <button className={`w-full px-6 py-2.5 text-black text-sm font-medium rounded-full border-2 transition-all duration-300 mt-6 ${
-                resource.highlighted || activeCard === index
-                  ? 'bg-transparent border-black'
-                  : 'bg-[#ff9900] border-transparent group-hover:border-black'
-              }`} style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-                Learn More →
+              <button 
+                className="w-full px-6 py-2.5 text-[17px] rounded-full border-2 border-black bg-transparent transition-all duration-300 mt-6 inline-flex items-center justify-center gap-2 hover:bg-[#ff9900] hover:border-[#ff9900]" 
+                style={{ fontFamily: 'Source Sans Pro, sans-serif', color: '#000000E5', fontWeight: 400 }}
+                onMouseEnter={() => setHoveredCard(index)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <span>Learn More</span>
+                <span className={`transition-all duration-300 ${hoveredCard === index ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+                  →
+                </span>
               </button>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-[-100px]">
-          <button className="inline-block px-6 py-3 text-gray-900 font-semibold border-b-2 border-gray-900" style={{ fontFamily: 'Source Sans Pro, sans-serif' }}>
-            Share Your UG Resources with Leaders →
+          <button 
+            className="inline-flex items-center gap-2 text-gray-900 pb-1 text-[17px] relative group transition-all duration-300"
+            style={{ fontFamily: 'Source Sans Pro, sans-serif', fontWeight: 400 }}
+            onMouseEnter={() => setHoveredButton(true)}
+            onMouseLeave={() => setHoveredButton(false)}
+          >
+            <span>Share Your UG Resources with Leaders</span>
+            <span className={`transition-all duration-300 ${hoveredButton ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+              →
+            </span>
+            <span 
+              className="absolute bottom-0 left-0 h-[2px] bg-gray-900 transition-all duration-300"
+              style={{ width: hoveredButton ? 'calc(100%)' : 'calc(100% - 28px)' }}
+            />
           </button>
         </div>
       </div>

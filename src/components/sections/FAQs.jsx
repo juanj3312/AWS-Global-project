@@ -62,29 +62,35 @@ export default function FAQs() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const [hoveredButton, setHoveredButton] = useState(false);
+
   return (
     <section id="faqs" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3" style={{ fontWeight: 600 }}>
+          <h2 className="text-3xl md:text-4xl mb-3" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
             AWS User Group Leaders - Tips & Tricks
           </h2>
-          <p className="text-gray-600 text-sm md:text-base">
+          <p className="text-[17px]" style={{ color: '#000000E5' }}>
             Provided by AWS UG leaders around the world
           </p>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-3 mb-8">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+              className={`rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-colors ${
+                openIndex === index ? 'bg-[#ff9900]' : 'bg-white'
+              }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-gray-50 transition-colors"
+                className={`w-full flex items-center justify-between p-4 md:p-5 text-left transition-colors ${
+                  openIndex === index ? 'bg-[#ff9900]' : 'hover:bg-gray-50'
+                }`}
               >
-                <span className="font-medium text-gray-900 text-sm md:text-base pr-4">
+                <span className="text-[17px] pr-4" style={{ color: '#000000E5' }}>
                   {faq.question}
                 </span>
                 <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center bg-[#ff9900] text-black rounded">
@@ -106,9 +112,9 @@ export default function FAQs() {
                 </span>
               </button>
               {openIndex === index && (
-                <div className="px-4 md:px-5 pb-4 md:pb-5 pt-2">
+                <div className="px-4 md:px-5 pb-4 md:pb-5 pt-2 bg-[#ff9900]">
                   {index === 11 ? (
-                    <div className="text-gray-700 text-sm md:text-base leading-relaxed">
+                    <div className="text-[17px] leading-relaxed" style={{ color: '#000000E5' }}>
                       <p className="mb-3">
                         Each December, we host a social meetup at a local pub and decorate the tables with pillow stuffing to look like clouds — simple, cheap, and fun.
                       </p>
@@ -123,7 +129,7 @@ export default function FAQs() {
                       </p>
                     </div>
                   ) : (
-                    <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                    <p className="text-[17px] leading-relaxed" style={{ color: '#000000E5' }}>
                       {faq.answer}
                     </p>
                   )}
@@ -131,6 +137,24 @@ export default function FAQs() {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <button 
+            className="inline-flex items-center gap-2 text-gray-900 pb-1 text-[17px] relative group transition-all duration-300"
+            style={{ fontFamily: 'Source Sans Pro, sans-serif', fontWeight: 400 }}
+            onMouseEnter={() => setHoveredButton(true)}
+            onMouseLeave={() => setHoveredButton(false)}
+          >
+            <span>Submit Your Tips and Tricks</span>
+            <span className={`transition-all duration-300 ${hoveredButton ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+              →
+            </span>
+            <span 
+              className="absolute bottom-0 left-0 h-[2px] bg-gray-900 transition-all duration-300"
+              style={{ width: hoveredButton ? 'calc(100%)' : 'calc(100% - 28px)' }}
+            />
+          </button>
         </div>
       </div>
     </section>
