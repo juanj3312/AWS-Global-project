@@ -118,15 +118,35 @@ export default function Features() {
           <div className="flex animate-scroll">
             {[...Array(4)].map((_, i) => (
               <div key={i} className="flex items-center px-4 whitespace-nowrap">
-                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="mx-6 inline-block align-middle" style={{ width: 24, height: 24 }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 135" width="24" height="24" fill="currentColor">
+                    <path d="m58 50 25.176 14.535c1.9141 1.1055 2.5703 3.5508 1.4648 5.4648s-3.5508 2.5703-5.4648 1.4648l-25.176-14.535v29.07c0 2.2109-1.7891 4-4 4s-4-1.7891-4-4v-29.07l-25.176 14.535c-1.9141 1.1055-4.3594 0.44922-5.4648-1.4648s-0.44922-4.3594 1.4648-5.4648l25.176-14.535-25.176-14.535c-1.9141-1.1055-2.5703-3.5508-1.4648-5.4648s3.5508-2.5703 5.4648-1.4648l25.176 14.535v-29.07c0-2.2109 1.7891-4 4-4s4 1.7891 4 4v29.07l25.176-14.535c1.9141-1.1055 4.3594-0.44922 5.4648 1.4648s0.44922 4.3594-1.4648 5.4648z"/>
+                  </svg>
+                </span>
                 <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
-                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="mx-6 inline-block align-middle" style={{ width: 24, height: 24 }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 135" width="24" height="24" fill="currentColor">
+                    <path d="m58 50 25.176 14.535c1.9141 1.1055 2.5703 3.5508 1.4648 5.4648s-3.5508 2.5703-5.4648 1.4648l-25.176-14.535v29.07c0 2.2109-1.7891 4-4 4s-4-1.7891-4-4v-29.07l-25.176 14.535c-1.9141 1.1055-4.3594 0.44922-5.4648-1.4648s-0.44922-4.3594 1.4648-5.4648l25.176-14.535-25.176-14.535c-1.9141-1.1055-2.5703-3.5508-1.4648-5.4648s3.5508-2.5703 5.4648-1.4648l25.176 14.535v-29.07c0-2.2109 1.7891-4 4-4s4 1.7891 4 4v29.07l25.176-14.535c1.9141-1.1055 4.3594-0.44922 5.4648 1.4648s0.44922 4.3594-1.4648 5.4648z"/>
+                  </svg>
+                </span>
                 <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
-                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="mx-6 inline-block align-middle" style={{ width: 24, height: 24 }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 135" width="24" height="24" fill="currentColor">
+                    <path d="m58 50 25.176 14.535c1.9141 1.1055 2.5703 3.5508 1.4648 5.4648s-3.5508 2.5703-5.4648 1.4648l-25.176-14.535v29.07c0 2.2109-1.7891 4-4 4s-4-1.7891-4-4v-29.07l-25.176 14.535c-1.9141 1.1055-4.3594 0.44922-5.4648-1.4648s-0.44922-4.3594 1.4648-5.4648l25.176-14.535-25.176-14.535c-1.9141-1.1055-2.5703-3.5508-1.4648-5.4648s3.5508-2.5703 5.4648-1.4648l25.176 14.535v-29.07c0-2.2109 1.7891-4 4-4s4 1.7891 4 4v29.07l25.176-14.535c1.9141-1.1055 4.3594-0.44922 5.4648 1.4648s0.44922 4.3594-1.4648 5.4648z"/>
+                  </svg>
+                </span>
                 <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
-                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="mx-6 inline-block align-middle" style={{ width: 24, height: 24 }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 135" width="24" height="24" fill="currentColor">
+                    <path d="m58 50 25.176 14.535c1.9141 1.1055 2.5703 3.5508 1.4648 5.4648s-3.5508 2.5703-5.4648 1.4648l-25.176-14.535v29.07c0 2.2109-1.7891 4-4 4s-4-1.7891-4-4v-29.07l-25.176 14.535c-1.9141 1.1055-4.3594 0.44922-5.4648-1.4648s-0.44922-4.3594 1.4648-5.4648l25.176-14.535-25.176-14.535c-1.9141-1.1055-2.5703-3.5508-1.4648-5.4648s3.5508-2.5703 5.4648-1.4648l25.176 14.535v-29.07c0-2.2109 1.7891-4 4-4s4 1.7891 4 4v29.07l25.176-14.535c1.9141-1.1055 4.3594-0.44922 5.4648 1.4648s0.44922 4.3594-1.4648 5.4648z"/>
+                  </svg>
+                </span>
                 <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
-                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="mx-6 inline-block align-middle" style={{ width: 24, height: 24 }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 135" width="24" height="24" fill="currentColor">
+                    <path d="m58 50 25.176 14.535c1.9141 1.1055 2.5703 3.5508 1.4648 5.4648s-3.5508 2.5703-5.4648 1.4648l-25.176-14.535v29.07c0 2.2109-1.7891 4-4 4s-4-1.7891-4-4v-29.07l-25.176 14.535c-1.9141 1.1055-4.3594 0.44922-5.4648-1.4648s-0.44922-4.3594 1.4648-5.4648l25.176-14.535-25.176-14.535c-1.9141-1.1055-2.5703-3.5508-1.4648-5.4648s3.5508-2.5703 5.4648-1.4648l25.176 14.535v-29.07c0-2.2109 1.7891-4 4-4s4 1.7891 4 4v29.07l25.176-14.535c1.9141-1.1055 4.3594-0.44922 5.4648 1.4648s0.44922 4.3594-1.4648 5.4648z"/>
+                  </svg>
+                </span>
                 <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
               </div>
             ))}
