@@ -70,6 +70,11 @@ export default function Footer() {
 
         {/* Bottom Copyright */}
         <div className="mt-12 pt-6 border-t border-gray-700 text-center">
+          <div className="mb-2 mt-6">
+            <span style={{ color: '#000000E5', fontWeight: 500, fontSize: 16 }}>
+              AWS Global Community
+            </span>
+          </div>
           <p className="text-gray-400 text-xs md:text-sm">
             © {new Date().getFullYear()} AWS Global. All rights reserved.
           </p>

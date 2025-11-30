@@ -16,12 +16,12 @@ export default function InstagramFeed() {
           {instagramPosts.map((post, index) => (
             index === 0 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 1 */}
+                {/* === EMBED INSTAGRAM POST 1 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DQfkb58gRfL/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DQfkb58gRfL/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -31,12 +31,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 1 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 2 */}
+                {/* === EMBED INSTAGRAM POST 2 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DG3okjHyu-F/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DG3okjHyu-F/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -46,12 +46,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 2 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 3 */}
+                {/* === EMBED INSTAGRAM POST 3 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DGWmiV7SEKh/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGWmiV7SEKh/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -61,12 +61,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 3 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 4 */}
+                {/* === EMBED INSTAGRAM POST 4 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DGWl7uOSjEq/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGWl7uOSjEq/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -76,12 +76,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 4 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 5 */}
+                {/* === EMBED INSTAGRAM POST 5 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DGWkOW2ywJQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGWkOW2ywJQ/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -91,12 +91,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 5 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 6 */}
+                {/* === EMBED INSTAGRAM POST 6 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DGWip4qSHKG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGWip4qSHKG/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -106,12 +106,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 6 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 7 */}
+                {/* === EMBED INSTAGRAM POST 7 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DGWiS8gStIW/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGWiS8gStIW/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
@@ -121,12 +121,12 @@ export default function InstagramFeed() {
               </div>
             ) : index === 7 ? (
               <div key={index} className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-0">
-                {/* Embed Instagram post 8 */}
+                {/* === EMBED INSTAGRAM POST 8 === */}
                 <div style={{width: '100%', height: '100%'}}>
                   <blockquote className="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DGB11oHylfK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style={{background:'#FFF', border:0, borderRadius:'3px', boxShadow:'0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)', margin:'1px', maxWidth:'540px', minWidth:'326px', padding:0, width:'99.375%'}}>
                     <div style={{padding:'16px'}}>
                       <a href="https://www.instagram.com/p/DGB11oHylfK/?utm_source=ig_embed&amp;utm_campaign=loading" style={{background:'#FFFFFF', lineHeight:0, padding:'0 0', textAlign:'center', textDecoration:'none', width:'100%'}} target="_blank" rel="noopener noreferrer">
-                        {/* ...SVG and placeholder content omitido por brevedad... */}
+                        {/* ...SVG y contenido omitido por brevedad... */}
                         Ver esta publicación en Instagram
                       </a>
                     </div>
