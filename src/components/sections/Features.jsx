@@ -64,8 +64,8 @@ export default function Features() {
 
 
         {/* Nueva sección Build Genie Cloud Solution */}
-        <div id="build" className="bg-[#F5F5F5] w-full py-20 sm:py-28 md:py-32 mx-0">
-          <div className="w-full">
+        <div id="build" className="bg-[#F5F5F5] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-20 sm:py-28 md:py-32 mx-0" style={{ position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', width: '100vw', marginTop: '150px' }}>
+          <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
             <div className="w-full p-6 sm:p-10 md:p-14 lg:p-16 my-9 sm:my-12 md:my-15 lg:my-18">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
                 {/* Contenido de texto a la izquierda */}
