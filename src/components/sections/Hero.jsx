@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative flex flex-col cursor-pointer">
       {/* Contenido principal con fondo de imagen */}
-      <div className="relative flex items-start justify-end px-4 sm:px-6 py-32 sm:py-40 md:py-48 lg:py-56 min-h-[600px]">
+      <div className="relative flex flex-col items-center justify-center px-2 sm:px-4 py-20 sm:py-32 md:py-40 lg:py-56 min-h-[500px]">
         {/* Fondo con imagen solo en esta sección */}
         <div className="absolute inset-0">
           <img 
@@ -21,24 +21,22 @@ export default function Hero() {
         </div>
         
         {/* Contenido */}
-        <div className="relative max-w-2xl z-10" style={{ marginRight: '300px' }}>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] text-white leading-[1.1] mb-1 text-justify" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif' }}>
+        <div className="relative w-full max-w-md z-10 text-center mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] text-white leading-[1.1] mb-1" style={{ fontWeight: 600, fontFamily: 'Source Sans Pro, sans-serif' }}>
             Empowering AWS
           </h1>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] leading-[1.1] mb-6 md:mb-8 text-justify" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif' }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] leading-[1.1] mb-6 md:mb-8">
             <span className="text-white">User Groups </span><span className="text-[#ff9900]">Worldwide</span>
           </h1>
-          
-          <p className="text-[17px] text-white mb-6 md:mb-8 text-justify">
+          <p className="text-[16px] text-white mb-6 md:mb-8">
             Tools, guidance, and community support for leaders everywhere.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch justify-stretch" style={{ marginBottom: '100px' }}>
+          <div className="flex flex-col gap-3 w-full mb-10">
             <a 
               href="https://builder.aws.com/community/user-groups" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="px-6 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-center rounded-full transition-all duration-200 text-[17px] inline-flex items-center justify-center gap-2" 
+              className="w-full px-6 py-3 bg-[#ff9900] hover:bg-[#e68a00] text-center rounded-full transition-all duration-200 text-[17px] flex items-center justify-center gap-2" 
               style={{ fontWeight: 400, color: '#000000E5' }}
               onMouseEnter={() => setHoveredButton1(true)}
               onMouseLeave={() => setHoveredButton1(false)}
@@ -49,7 +47,7 @@ export default function Hero() {
               </span>
             </a>
             <button 
-              className="px-6 py-3 bg-transparent text-white rounded-full transition-all duration-200 text-[17px] inline-flex items-center justify-center gap-2" 
+              className="w-full px-6 py-3 bg-transparent text-white rounded-full transition-all duration-200 text-[17px] flex items-center justify-center gap-2 border border-white" 
               style={{ fontWeight: 400 }}
               onMouseEnter={() => setHoveredButton3(true)}
               onMouseLeave={() => setHoveredButton3(false)}
