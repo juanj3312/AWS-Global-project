@@ -5,7 +5,7 @@ export default function Features() {
   const [hoveredButton2, setHoveredButton2] = useState(false);
 
   return (
-    <section id="features" className="py-12 sm:py-16 md:py-20 bg-white">
+    <section id="features" className="py-16 sm:py-24 md:py-32 bg-white">
       <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
         {/* Sección con fondo blanco, solo el texto en cuadro gris */}
         <div id="featured" className="rounded-3xl p-0">
@@ -63,9 +63,9 @@ export default function Features() {
         </div>
 
         {/* Nueva sección Build Genie Cloud Solution */}
-        <div id="build" className="bg-[#F5F5F5] py-12 sm:py-16 md:py-20">
-          <div className="w-full max-w-[1100px] mx-auto px-4 sm:px-8">
-            <div className="bg-white rounded-3xl p-6 sm:p-10 md:p-14 lg:p-16">
+        <div id="build" className="bg-[#F5F5F5] w-full py-20 sm:py-28 md:py-32 mx-0">
+          <div className="w-full flex justify-center items-center">
+            <div className="w-full max-w-[1100px] p-6 sm:p-10 md:p-14 lg:p-16 my-12 sm:my-16 md:my-20 lg:my-24">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Contenido de texto a la izquierda */}
                 <div className="space-y-6">
