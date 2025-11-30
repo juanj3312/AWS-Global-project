@@ -48,7 +48,7 @@ export default function Resources() {
           {resources.map((resource, index) => (
             <div
               key={index}
-              className="rounded-2xl p-8 transition-all duration-300 bg-white flex flex-col justify-between"
+              className="rounded-2xl p-8 transition-all duration-300 bg-white hover:bg-[#ff9900] flex flex-col justify-between cursor-pointer"
               style={{ width: '323px', height: '388px' }}
             >
               <div>
