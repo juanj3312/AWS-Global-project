@@ -6,7 +6,7 @@ export default function Features() {
 
   return (
     <section id="features" className="py-16 sm:py-24 md:py-32 bg-white cursor-pointer">
-      <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
         {/* Sección con fondo blanco, solo el texto en cuadro gris */}
         <div id="featured" className="rounded-3xl p-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -116,30 +116,20 @@ export default function Features() {
             .animate-scroll { animation: scroll 30s linear infinite; }
           `}</style>
           <div className="flex animate-scroll">
-            <div className="flex items-center px-4 whitespace-nowrap">
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
-            </div>
-            <div className="flex items-center px-4 whitespace-nowrap">
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
-              <span className="text-2xl text-black mx-6">✱</span>
-              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
-            </div>
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="flex items-center px-4 whitespace-nowrap">
+                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
+                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
+                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
+                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
+                <span className="text-2xl text-black mx-6">✱</span>
+                <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

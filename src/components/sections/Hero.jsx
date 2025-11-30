@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative flex flex-col cursor-pointer">
       {/* Contenido principal con fondo de imagen */}
-      <div className="relative flex flex-col items-center justify-center px-2 sm:px-4 py-20 sm:py-32 md:py-40 lg:py-56 min-h-[500px]">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center py-20 sm:py-32 md:py-40 lg:py-56 min-h-[500px]">
         {/* Fondo con imagen solo en esta sección */}
         <div className="absolute inset-0">
           <img 
@@ -77,37 +77,26 @@ export default function Hero() {
           }
         `}</style>
         <div className="flex animate-scroll">
-          <div className="flex items-center px-4 whitespace-nowrap">
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
-          </div>
-          {/* Duplicado para loop infinito */}
-          <div className="flex items-center px-4 whitespace-nowrap">
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
-            <span className="text-2xl text-black mx-6">✱</span>
-            <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
-          </div>
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex items-center px-4 whitespace-nowrap">
+              <span className="text-2xl text-black mx-6">✱</span>
+              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Lead Globally</span>
+              <span className="text-2xl text-black mx-6">✱</span>
+              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Connect Communities</span>
+              <span className="text-2xl text-black mx-6">✱</span>
+              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Grow Together</span>
+              <span className="text-2xl text-black mx-6">✱</span>
+              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Cloud Innovation</span>
+              <span className="text-2xl text-black mx-6">✱</span>
+              <span className="text-[17px] text-black mx-6" style={{ color: '#000000E5' }}>Share Knowledge</span>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Sección de Discover AWS User Groups */}
       <div className="relative py-12 sm:py-16 md:py-20 bg-[#F5F5F5]">
-        <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
+        <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Contenido de texto a la izquierda */}
