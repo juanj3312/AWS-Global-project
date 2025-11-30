@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative flex flex-col">
       {/* Contenido principal con fondo de imagen */}
-      <div className="relative flex items-center justify-center px-4 sm:px-6 py-32 sm:py-40 md:py-48 lg:py-56 min-h-[600px]">
+      <div className="relative flex items-start justify-end px-4 sm:px-6 py-32 sm:py-40 md:py-48 lg:py-56 min-h-[600px]">
         {/* Fondo con imagen solo en esta sección */}
         <div className="absolute inset-0">
           <img 
@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
         
         {/* Contenido */}
-        <div className="relative max-w-2xl z-10">
+        <div className="relative max-w-2xl z-10" style={{ marginRight: '300px' }}>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] text-white leading-[1.1] mb-1 text-justify" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif' }}>
             Empowering AWS
           </h1>
@@ -33,7 +33,7 @@ export default function Hero() {
             Tools, guidance, and community support for leaders everywhere.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch justify-stretch">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch justify-stretch" style={{ marginBottom: '100px' }}>
             <a 
               href="https://builder.aws.com/community/user-groups" 
               target="_blank" 
@@ -108,40 +108,41 @@ export default function Hero() {
       </div>
 
       {/* Sección de Discover AWS User Groups */}
-      <div className="relative py-20 bg-white">
-        <div className="container max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Contenido de texto a la izquierda */}
-            <div className="space-y-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-[35px] leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
-                Discover AWS User Groups<br />
-                Around the World
-              </h2>
-              <a 
-                href="https://builder.aws.com/community/user-groups" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[17px]"
-                style={{ fontWeight: 400, color: '#000000E5' }}
-                onMouseEnter={() => setHoveredButton2(true)}
-                onMouseLeave={() => setHoveredButton2(false)}
-              >
-                <span>Explore AWS UG</span>
-                <span className={`transition-all duration-300 ${hoveredButton2 ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
-                  →
-                </span>
-              </a>
-            </div>
+      <div className="relative py-12 sm:py-16 md:py-20 bg-[#F5F5F5]">
+        <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              {/* Contenido de texto a la izquierda */}
+              <div className="space-y-4">
+                <h2 className="text-2xl sm:text-3xl lg:text-[35px] leading-tight" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
+                  Discover AWS User Groups<br />
+                  Around the World
+                </h2>
+                <a 
+                  href="https://builder.aws.com/community/user-groups" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-3 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[17px]"
+                  style={{ fontWeight: 400, color: '#000000E5' }}
+                  onMouseEnter={() => setHoveredButton2(true)}
+                  onMouseLeave={() => setHoveredButton2(false)}
+                >
+                  <span>Explore AWS UG</span>
+                  <span className={`transition-all duration-300 ${hoveredButton2 ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+                    →
+                  </span>
+                </a>
+              </div>
 
-            {/* Mapa del mundo a la derecha */}
-            <div className="relative">
-              <div className="bg-white rounded-2xl p-4 md:p-6 relative overflow-hidden min-h-[500px] flex items-center justify-center">
-                <img 
-                  src="/world-map.jpg" 
-                  alt="World Map" 
-                  className="w-full h-auto object-contain scale-110"
-                  style={{ filter: 'contrast(1.2)' }}
-                />
+              {/* Mapa del mundo a la derecha */}
+              <div className="relative">
+                <div className="relative overflow-hidden flex items-center justify-center">
+                  <img 
+                    src="/world-map.jpg" 
+                    alt="World Map" 
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>

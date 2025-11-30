@@ -8,7 +8,7 @@ export default function Features() {
     <section id="features" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="w-full max-w-[1600px] mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
         {/* Fondo gris para la primera sección */}
-        <div className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
+        <div id="featured" className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Imágenes a la izquierda */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
@@ -68,7 +68,7 @@ export default function Features() {
         </div>
 
         {/* Nueva sección Build Genie Cloud Solution */}
-        <div className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20" style={{ marginTop: '80px' }}>
+        <div id="build" className="bg-[#F5F5F5] rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20" style={{ marginTop: '80px' }}>
           <div className="bg-white rounded-3xl p-8 sm:p-12 md:p-16 lg:p-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
               {/* Contenido de texto a la izquierda */}

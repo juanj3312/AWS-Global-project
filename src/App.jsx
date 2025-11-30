@@ -15,9 +15,15 @@ export default function App() {
         <Hero />
       </div>
       <main className="flex-1">
-        <Features />
-        <FAQs />
-        <Resources />
+        <div id="user-groups">
+          <Features />
+        </div>
+        <div id="insights">
+          <FAQs />
+        </div>
+        <div id="resources">
+          <Resources />
+        </div>
         <InstagramFeed />
       </main>
       <Footer />
