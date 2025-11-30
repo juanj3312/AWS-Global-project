@@ -73,7 +73,7 @@ export default function Features() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
               {/* Contenido de texto a la izquierda */}
               <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl leading-tight whitespace-nowrap" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C' }}>
+                <h2 className="leading-tight whitespace-nowrap" style={{ fontWeight: 500, fontFamily: 'Source Sans Pro, sans-serif', color: '#1C1C1C', fontSize: '40px' }}>
                   Build Genie Cloud Solution
                 </h2>
                 
