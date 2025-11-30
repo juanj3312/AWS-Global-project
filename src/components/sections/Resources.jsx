@@ -59,17 +59,19 @@ export default function Resources() {
                   {resource.description}
                 </p>
               </div>
-              <button 
-                className="w-full px-6 py-2.5 text-[17px] rounded-full border-2 border-black bg-transparent transition-all duration-300 mt-6 inline-flex items-center justify-center gap-2 hover:bg-[#ff9900] hover:border-[#ff9900]" 
-                style={{ fontFamily: 'Source Sans Pro, sans-serif', color: '#000000E5', fontWeight: 400 }}
-                onMouseEnter={() => setHoveredCard(index)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <span>Learn More</span>
-                <span className={`transition-all duration-300 ${hoveredCard === index ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
-                  →
-                </span>
-              </button>
+              <div className="flex justify-start">
+                <button 
+                  className="px-6 py-2.5 text-[17px] rounded-full bg-transparent transition-all duration-300 mt-3 inline-flex items-center gap-2" 
+                  style={{ fontFamily: 'Source Sans Pro, sans-serif', color: '#000000E5', fontWeight: 400 }}
+                  onMouseEnter={() => setHoveredCard(index)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                >
+                  <span>Learn More</span>
+                  <span className={`transition-all duration-300 ${hoveredCard === index ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}>
+                    →
+                  </span>
+                </button>
+              </div>
             </div>
           ))}
         </div>
