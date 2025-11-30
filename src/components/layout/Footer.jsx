@@ -4,7 +4,7 @@ export default function Footer() {
   const [hoveredButton, setHoveredButton] = useState(false);
 
   return (
-    <footer className="bg-[#1a1a1a] text-white py-12 md:py-16">
+    <footer className="bg-[#1a1a1a] text-white pt-[250px] pb-[250px]">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Logo Section */}
@@ -13,7 +13,7 @@ export default function Footer() {
               <img 
                 src="/aws-global-logo.png" 
                 alt="AWS Global" 
-                className="h-12 md:h-14 w-auto"
+                className="h-16 md:h-20 w-auto"
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
               href="https://tally.so/r/pbee4b"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[17px]" 
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#ff9900] hover:bg-[#e68a00] rounded-full transition-all duration-200 text-[16px]" 
               style={{ fontWeight: 400, color: '#000000E5' }}
               onMouseEnter={() => setHoveredButton(true)}
               onMouseLeave={() => setHoveredButton(false)}
